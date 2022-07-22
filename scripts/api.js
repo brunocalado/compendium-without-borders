@@ -31,8 +31,23 @@ export class cwb {
 
   // -------------------------------------------------------------
   // Entity Helpers  
-  static async createActor(data) {  
-    const myActor = await Actor.create(data);
+  static async createEntity( data, entityType ) {  
+    switch (entityType) {
+      case 'Actor':
+        const entity = await Actor.createDocuments([data]);
+        return;
+      case 'JournalEntry':
+        const entity = await JournalEntry.createDocuments([data]);
+        return;
+      case 'Scene':
+        const entity = await Scene.createDocuments([data]);
+        return;
+      case 'Item':       
+        const entity = await Item.createDocuments([data]);      
+        return;        
+      default:
+        this.debug( entityType + ' is not a valid type!' );
+    }    
   }
   
   // -------------------------------------------------------------
@@ -72,11 +87,52 @@ for (let entity of inside) {
 
 
 
+let data = {
+  "name": "Básico",
+  "content": "",
+};
 
 
 
+await JournalEntry.createDocuments(data);
 
 
 
-
+{
+  "name": "power",
+  "type": "power",
+  "img": "systems/swade/assets/icons/power.svg",
+  "data": {
+    "description": "",
+    "notes": "",
+    "additionalStats": {},
+    "actions": {
+      "skill": "fuckfuck",
+      "skillMod": "",
+      "dmgMod": "",
+      "additional": {}
+    },
+    "bonusDamageDie": 6,
+    "favorite": false,
+    "rank": "",
+    "pp": "0",
+    "damage": "",
+    "range": "",
+    "duration": "",
+    "trapping": "",
+    "arcane": "",
+    "skill": "",
+    "ap": 0,
+    "modifiers": []
+  },
+  "effects": [],
+  "flags": {
+    "exportSource": {
+      "world": "testes-savage-pf",
+      "system": "swade",
+      "coreVersion": "9.269",
+      "systemVersion": "1.1.9"
+    }
+  }
+}
 */
