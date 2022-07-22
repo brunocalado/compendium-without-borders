@@ -18,7 +18,8 @@ Entity Type
 
 Example
 ```js
-validEntityType( 'Actor' )
+  const cwb = game.modules.get('compendium-without-borders')?.api.cwb;
+  cwb.validEntityType( 'Actor' )
 ```
 
 Returns true if the Entity is valid.
@@ -29,7 +30,8 @@ This will list in the console (F12) all compendiums from the type you want.
 
 Example
 ```js
-listCompendiums( 'Actor' )
+  const cwb = game.modules.get('compendium-without-borders')?.api.cwb;
+  cwb.listCompendiums( 'Actor' )
 ```
 
 ### async getCompediumEntities( entityType, compendiumLabel )
@@ -37,8 +39,22 @@ This will return an array with all content inside the compendium you choose.
 
 Example
 ```js
-getCompediumEntities( 'Actor', 'My Monsters' )
+  const cwb = game.modules.get('compendium-without-borders')?.api.cwb;
+  cwb.getCompediumEntities( 'Actor', 'My Monsters' )
 ```
+
+### async createEntity(data, entityType);
+This will create an entity with the type you defined.
+
+
+
+Example
+```js
+  let data = {};
+  const cwb = game.modules.get('compendium-without-borders')?.api.cwb;
+  cwb.createEntity(data, 'Actor');
+```
+
 
 ## How To
 
