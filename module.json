@@ -1,0 +1,23 @@
+{   
+  "name": "compendium-without-borders",   
+  "title": "Compendium Without Borders",
+  "description": "Compendium Without Borders",   
+  "author": "Mestre Digital",
+  "version": "0.0.1",
+  "minimumCoreVersion": "9",
+  "compatibleCoreVersion":"10",
+  
+  "scripts": [],  
+	"esmodules": ["./scripts/init.js"],
+
+  "packs": [],
+
+  "styles": [],
+  
+  "url": "https://github.com/brunocalado/compendium-without-borders",
+  "manifest": "https://raw.githubusercontent.com/brunocalado/compendium-without-borders/main/module.json",  
+  "download": "https://codeload.github.com/brunocalado/compendium-without-borders/zip/main",
+
+  "flags": {}  
+  
+}
