@@ -1,5 +1,9 @@
 # Compendium Without Borders
 
+## Installation
+Use paste this link to install:
+https://raw.githubusercontent.com/brunocalado/compendium-without-borders/main/module.json
+
 ## API
 
 ### validEntityType( entityType )
@@ -7,7 +11,10 @@ You must use a valid entity type for **entityType**.
 
 Entity Type
 - Actor
+- Cards
+- Item
 - JournalEntry
+- Scene
 
 Example
 ```js
