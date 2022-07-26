@@ -5,6 +5,5 @@ Hooks.once('init', function() {
   // --------------------------------------------------
   // Load API
   game.modules.get(moduleName).api = { cwb }; // Request with: const cwb = game.modules.get('compendium-without-borders')?.api.cwb;
-  
 });
 

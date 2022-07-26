@@ -34,13 +34,13 @@ Example
   cwb.listCompendiums( 'Actor' )
 ```
 
-### async getCompediumEntities( entityType, compendiumLabel )
+### async getCompendiumEntities( entityType, compendiumLabel )
 This will return an array with all content inside the compendium you choose.
 
 Example
 ```js
   const cwb = game.modules.get('compendium-without-borders')?.api.cwb;
-  cwb.getCompediumEntities( 'Actor', 'My Monsters' )
+  cwb.getCompendiumEntities( 'Actor', 'My Monsters' )
 ```
 
 ### async createEntity(data, entityType);
@@ -67,7 +67,7 @@ Example
 Example
 ```js
   const cwb = game.modules.get('compendium-without-borders')?.api.cwb;
-  const myMonsters = await cwb.getCompediumEntities( 'Actor', 'My Monsters' )
+  const myMonsters = await cwb.getCompendiumEntities( 'Actor', 'My Monsters' )
 
   for (let monster of myMonsters) {
     // optional logic to convert 
