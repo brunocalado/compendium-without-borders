@@ -4,7 +4,7 @@ export class cwb {
   static async getCompendiumEntities( entityType, compendiumLabel ) {
     if ( !this.validEntityType(entityType) ) return;    
     const index = await game.packs.find(p=>p.metadata.label=='spirit charms').getIndex({fields: ["type"]});
-    if (!compendiums) this.debug( "The compendium couldn't be found." );
+    if (!index) this.debug( "The compendium couldn't be found." );
     //console.log(index.map(i=>i.type));
     return index;
   }    

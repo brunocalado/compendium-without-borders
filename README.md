@@ -11,10 +11,7 @@ You must use a valid entity type for **entityType**.
 
 Entity Type
 - Actor
-- Cards
 - Item
-- JournalEntry
-- Scene
 
 Example
 ```js
